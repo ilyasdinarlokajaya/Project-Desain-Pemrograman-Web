@@ -1,0 +1,549 @@
+.container {
+    display: flex;
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
+    -webkit-display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+}
+
+.w20 {
+    width: 20%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.w80 {
+    width: 80%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.character-count {
+    position: absolute;
+    right: 12px;
+    top: 47%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.character-count1 {
+    position: absolute;
+    right: 12px;
+    top: 40%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.addon-right {
+  position: absolute;
+  right: 22px;
+  top: 0;
+  transform: translateY(75%);
+  font-size: small;
+}
+.custom-select-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .form-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 20px; /*Adjust as needed based on image width */
+ }
+
+  .form-select::-ms-expand {
+    display: none;
+  }
+
+  .addon-right-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust as needed based on image width */
+    transform: translateY(-50%); 
+  }
+
+.addon-left {
+  position: absolute;
+  left: 22px;
+  top: 0;
+  transform: translateY(65%);
+  font-size: small;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+  
+.col {
+    flex: 1;
+}
+
+.tc-green {
+    color: #10B989;
+}
+
+.bg-blue {
+    background-color: #E8F1FF;
+}
+
+.uline-green {
+    border: 1px solid #10B989; margin: 5px 0;
+}
+
+.uline-grey {
+    border: 1px solid #D1D1D1; margin: 5px 0;
+}
+
+.uline-black {
+            position: relative;
+            display: block;
+            color: black; /* Sesuaikan warna teks */
+        }
+
+.uline-black::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* Sesuaikan jarak dari teks */
+    width: 50%; /* Sesuaikan panjang garis */
+    height: 1px; /* Sesuaikan lebar garis */
+    background-color: black; /* Sesuaikan warna garis */
+}
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+main{
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 0.4fr 0.4fr 0.4fr 0.4fr;
+    grid-template-rows: 40px 40px 40px 40px; 
+    grid-template-areas:
+        "foto header header header"
+        "foto content1 content1 content1"
+        "foto content2 content2 content2"
+        "foto content3 content4 content5";
+    grid-gap: 50px;
+}
+.foto {
+    grid-area: foto;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.header {
+    grid-area: header;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.content1 {
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+.content2 {
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.content3 {
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.content4 {
+  grid-area: content4;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+.content5 {
+  grid-area: content5;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.description-textarea {
+    width: 64,5em; /* Lebar textarea */
+    height: 100px; /* Tinggi textarea */
+    padding: 10px; /* Padding untuk jarak teks dari tepi textarea */
+    user-select: none;
+    resize: none;
+    font-family: sans-serif;
+}
+
+.bt-green {
+    background-color: #047857;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.bt-submit-green {
+    background-color: #047857;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: 0.3s all;
+    position: absolute;
+    right: 90px;
+}
+
+.bt-image {
+    background-color: white;
+    color: #10B989;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block;
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.bt-change-image {
+    background-color: white;
+    color: #10B989;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+  
+.bt-green:hover {
+    background-color: #047857c7; /* Warna saat tombol dihover */
+}
+  
+.bt-blue {
+    background-color: white;
+    color: #5676FF;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+  
+.bt-blue:hover {
+    background-color: #5676FF; /* Warna saat tombol dihover */
+    color: white;
+}
+  
+.search-field {
+    display: block;
+    width: 35%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+  
+.flex{
+    flex: none;
+}
+  
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th {
+    border-bottom: 2px solid #ddd; /* Add a solid black line under table headers */
+    text-align: center;
+    padding-bottom: 20px;
+    color: #047857;
+}
+  
+td {
+    /* border: 1px solid #ddd;
+    padding: 8px; */
+  
+    border-bottom: 1px solid #ddd; /* Add a solid black line under table headers */
+    text-align: cnter;
+    padding: 20px 0px;
+}
+
+
+.form-label {
+    font-size: 18px;
+    font-weight: bold;    
+}
+
+.form-text {
+    display: block;
+    width: 98%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.detail-title-bold {
+    font-weight: bold;
+}
+.detail-title-thin {
+    font-weight: thin;
+    color: var(--Neutral-White-Colour-400, #989898);
+    /* Content Text */
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.detail-bold {
+    font-weight: bold;
+    /* Content Text */
+    /* font-style: normal; */
+    font-weight: 500;
+    line-height: normal;
+}
+
+.detail-title {
+    /* Content Text */
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.box1 {
+  height: 494px;
+  width: 547px;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+.text-container {
+    display: inline-block; /* Membuat div menjadi inline block */
+    vertical-align: top; /* Mengatur vertical alignment ke atas */
+}
+
+.box1 .rectangle {
+  height: 494px;
+  display: block; /* Mengatasi whitespace di bawah gambar */
+  margin-right: 10px;
+  left: 0;
+  top: 0;
+  width: 547px;
+}
+.box {
+  height: 64px;
+  width: 64px;
+}
+
+.box .rectangle {
+    height: 104px;
+    margin-left: 20px;
+    margin-right: 20px;
+  top: 0;
+  width: 104px;
+}
+.label .text-wrapper {
+  color: var(--primary-colour600);
+  font-family: var(--content-text-font-family);
+  font-size: var(--content-text-font-size);
+  font-style: var(--content-text-font-style);
+  font-weight: var(--content-text-font-weight);
+  left: 0;
+  letter-spacing: var(--content-text-letter-spacing);
+  line-height: var(--content-text-line-height);
+  position: fixed;
+  top: 0;
+}
+
+.label-green {
+    background-color: #A7F3DD; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    color: #014935; 
+    font-weight: 500;
+}
+
+.label-blue {
+    background-color: #a7d3f3; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    color: #014935; 
+    font-weight: 500;
+}
+
+.label-yellow {
+    background-color: #f3e5a7; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    color: #014935; 
+    font-weight: 500;
+}
+.label-red {
+  background-color: #ff0000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #014935;
+  font-weight: 500;
+}
+
+.detailgrid{
+    display: grid;
+    grid-template-columns: 800px auto;
+    grid-template-areas: 'main aside';
+    gap: 70px;
+}
+.detail-plannogram-grid{
+    display: grid;
+    grid-template-columns: 600px auto;
+    grid-template-areas: 'main aside';
+    gap: 50px;
+}
+.detail-banner-grid{
+    display: grid;
+    grid-template-columns: 1.0fr;
+    grid-template-areas: 'main';
+    gap: 70px;
+}
+
+.main-banner{
+    grid-area: main;
+    margin-top: 27px;
+
+}
+.maindvg{
+    grid-area: main;
+    margin-top: 27px;
+}
+
+.asidedvg{
+    grid-area: aside;
+    margin-top: 27px;
+}
+
+.imgdetail{
+    width: 800px;
+    height: 500px;
+    padding-right: 20px;
+}
+.imgdetail-plannogram{
+    width: 600px;
+    height: 400px;
+    padding-right: 20px;
+}
+
+.belowmaingrid{
+    width: 600px;
+    display: grid;
+    grid-template-areas: 
+    'kiri tengah kanan';
+}
+
+.belowtengah{
+    grid-area: tengah;
+    width: 112px;
+}
+
+.belowkanan{
+    grid-area: kanan;
+    width: 112px;
+}
+
+.belowkiri{
+    grid-area: kiri;
+    width: 117px;
+    /* margin-top: 8px; */
+}
+
+.p-kanan{
+    font-family: sans-serif;
+    z-index: 1;
+    margin-top: -27px;
+    float: right;
+    margin-right: 10px;
+}
+
+
+.p-kanan-desk{
+    margin-top: -110px;
+}
+
+.p-kanan2{
+    font-family: sans-serif;
+    z-index: 1;
+    margin-top: -25px;
+    float: right;
+    margin-right: -25px;
+}
+.p-kanan-desk2{
+    margin-top: -165px;
+}
+
+.p-name{
+    font-family: sans-serif;
+    z-index: 1;
+    margin-top: -25px;
+    float: right;
+    margin-right: -20px;
+}
+.p-kanan-name{
+    margin-right: 60px;
+    text-align: right;
+}
+.xPojok{
+  text-align: right;
+} 
+
+.tebal{
+    border: 1px solid black;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+    margin-top: -10px;
+}
+
+.bold-banner{
+    border: 1px solid black;
+    width: 50%;
+    align-content: center;
+    margin-bottom: 16px;
+    margin-top: -10px;
+}
+.bold-plannogram{
+    border: 1px solid black;
+    width: 95%;
+    align-content: center;
+    margin-bottom: 16px;
+    margin-top: -10px;
+}
